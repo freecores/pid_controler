@@ -1,22 +1,23 @@
 -------------------------------------------------------------------------------
--- Title      : Testbench for pid_controler
+-- Title      : Testbench for pid_controller
 -- Project    : 
 -------------------------------------------------------------------------------
--- File       : tb_pid_controler_0.vhd
--- Author     : Tomasz Turek  <tomasz.turek@secom.com.pl>
--- Company    : SeCom Sp Z o. o.
+-- File       : tb_pid_controller_0.vhd
+-- Author     : Tomasz Turek  <tomasz.turek@gmail.com>
+-- Company    : SzuWar ZOO
 -- Created    : 16:43:29 21-07-2010
--- Last update: 11:17:40 23-07-2010
+-- Last update: 20:54:54 04-10-2010
 -- Platform   : Xilinx ISE 10.1.03
 -- Standard   : VHDL'93/02
 -------------------------------------------------------------------------------
 -- Description: 
 -------------------------------------------------------------------------------
--- Copyright (c) 2010 SeCom Sp Z o. o.
+-- Copyright (c) 2010 SzuWar ZOO
 -------------------------------------------------------------------------------
 -- Revisions  :
 -- Date                  Version  Author  Description
 -- 16:43:29 21-07-2010   1.0      aTomek  Created
+-- 20:54:31 04-10-2010   1.1      aTomek  Created
 -------------------------------------------------------------------------------
 
 LIBRARY ieee;
@@ -24,15 +25,15 @@ USE ieee.std_logic_1164.ALL;
 USE ieee.std_logic_unsigned.all;
 USE ieee.numeric_std.ALL;
 
-entity tb_pid_controler_0 is
+entity tb_pid_controller_0 is
 
-end entity tb_pid_controler_0;
+end entity tb_pid_controller_0;
 
-architecture testbench of tb_pid_controler_0 is
+architecture testbench of tb_pid_controller_0 is
 -------------------------------------------------------------------------------
 -- components --
 -------------------------------------------------------------------------------
-   component pid_controler is
+   component pid_controller is
 
       generic
          (
@@ -55,7 +56,7 @@ architecture testbench of tb_pid_controler_0 is
                CORRECT_O           : out std_logic_vector(iDataWidith - 1 downto 0)
                );
       
-   end component pid_controler;
+   end component pid_controller;
    
 -------------------------------------------------------------------------------
 -- constants --
